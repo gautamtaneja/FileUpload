@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form #uploadFrom=ngForm (ngSubmit)="OnSubmit()">
+                <div>
+                    <label for="formFileLg" class="form-label">Upload File:</label>
+                    <input class="form-control form-control-lg" 
+                     type="file" #file accept=".xlsx, .xls"
+                    (change)="handelFileInput($event)">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
